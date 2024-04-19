@@ -5,12 +5,14 @@ metadata:
   name: yelp-camp-secrets
 type: Opaque
 data:
-  CLOUDINARY_CLOUD_NAME: ZGlpMnJvenRw
-  CLOUDINARY_KEY: NzU3NjQzMjU3ODkxMzY0
-  CLOUDINARY_SECRET: SHpBeTdPU3VCZjJhSUFSUm5Fd0tIcEVtc01N
-  MAPBOX_TOKEN: cGsuZXlKMUlqb2lZV1JwYW1GcGMzZGhiQ0lzSW1FaU9pSmpiSFl3TnpKemVHNHhaRzR5TW1wd1ltWm1OSFZ3YlhObUluMC5SVlFZc3UwUnZKZ0NGNTRrMjJkWDBB
-  DB_URL: bW9uZ29kYitzcnY6Ly9qYWlzd2FsYWRpMjQ2OnNjN1ZHU3lkN2RRQ2NMeTFAY2x1c3RlcjAuaXE2bXV0aC5tb25nb2RiLm5ldC8/cmV0cnlXcml0ZXM9dHJ1ZSZ3PW1ham9yaXR5JmFwcE5hbWU9Q2x1c3RlcjA=
-  SECRET: ZGV2b3Bzc2hhY2s=
+  CLOUDINARY_CLOUD_NAME: ZHh3aHhvY21jCg==
+  CLOUDINARY_KEY: NzM1MjY0MjM1NjI1NDE4Cg==
+  CLOUDINARY_SECRET: VW9EWEtaSm5lZDVqTk92NlRaaG5YR0ZfdTFvCg==
+  MAPBOX_TOKEN: cGsuZXlKMUlqb2ljMmxrWkdoaFlXNTBJaXdpWVNJNkltTnNkalp0WXpCa1pqQXdjREF5YW1wNmJYQmlPR3N4Y1hnaWZRLkJ5aC01bVV2VEVXODc3ZC1hSzNCbFEK
+
+  DB_URL: bW9uZ29kYitzcnY6Ly9zaWRkaGFhbnRtaXNocmFhOmtpazlpcEN2TngybHV5Y05AZGV2b3BzLnRyNzBzMmwubW9uZ29kYi5uZXQvP3JldHJ5V3JpdGVzPXRydWUmdz1tYWpvcml0eSZhcHBOYW1lPWRldm9wcwo=
+  SECRET: c2lkZGhhbnRkZXZvcHMK
+
 
 ---
 apiVersion: apps/v1
@@ -29,7 +31,7 @@ spec:
     spec:
       containers:
         - name: yelp-camp-container
-          image: adijaiswal/campa:latest
+          image: lastgod/campa:latest
           ports:
             - containerPort: 3000
           env:
